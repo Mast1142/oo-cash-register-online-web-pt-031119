@@ -20,7 +20,7 @@ attr_accessor :total, :discount
 
   def apply_discount
     @total = @total*((100-@discount)/100.0)
-    binding.pry
+    #binding.pry
   end
 
 
