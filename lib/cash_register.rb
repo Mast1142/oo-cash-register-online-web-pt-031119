@@ -16,7 +16,7 @@ attr_accessor :total, :discount
 
   def add_item(item, price, quantity = 1)
     @total += (price * quantity)
-    if quantity > 1 loop do
+    if quantity > 1
       @cart << item
       quantity += 1
     end
