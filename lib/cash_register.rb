@@ -20,7 +20,7 @@ attr_accessor :total, :discount
       @cart << item
       quantity += 1
     end
-    binding.pry
+    #binding.pry
   end
 
   def apply_discount
