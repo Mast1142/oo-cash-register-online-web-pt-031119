@@ -16,8 +16,11 @@ attr_accessor :total, :discount
 
   def add_item(item, price, quantity = 1)
     @total += (price * quantity)
-    @cart << item
-    #binding.pry
+    if quantity > 1 do
+      @cart << item
+      quantity += 1
+    end
+    binding.pry
   end
 
   def apply_discount
