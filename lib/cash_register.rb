@@ -7,14 +7,16 @@ attr_accessor :total, :discount
   def initialize(discount = 0)
     @total = 0
     @discount = discount
+    @cart = []
   end
 
   def total
     @total
   end
 
-  def add_item(title, price, quantity = 1)
+  def add_item(item, price, quantity = 1)
     @total += (price * quantity)
+    @cart << item
     #binding.pry
   end
 
@@ -25,8 +27,9 @@ attr_accessor :total, :discount
     else
       "There is no discount to apply."
     end
+  end
 
-    #binding.pry
+  def items
   end
 
 
