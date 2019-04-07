@@ -10,7 +10,7 @@ attr_accessor :total, :discount
   end
 
   def total
-    @total = total
+    @total
   end
 
 
