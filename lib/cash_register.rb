@@ -18,7 +18,7 @@ attr_accessor :total, :discount
     @total += (price * quantity)
     while quantity > 0
       @cart << item
-      quantity += 1
+      quantity -= 1
     end
     #binding.pry
   end
