@@ -36,5 +36,8 @@ attr_accessor :total, :discount
     @cart
   end
 
+  def void_last_transaction
+    @total - price
+  end
 
 end
