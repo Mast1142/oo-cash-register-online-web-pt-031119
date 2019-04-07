@@ -15,10 +15,12 @@ attr_accessor :total, :discount
 
   def add_item(title, price, quantity = 1)
     @total += (price * quantity)
-
     #binding.pry
   end
 
+  def apply_discount
+    binding.pry
+  end
 
 
 end
