@@ -30,6 +30,7 @@ attr_accessor :total, :discount
   end
 
   def items
+    @cart
   end
 
 
